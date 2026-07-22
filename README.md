@@ -83,6 +83,48 @@ Les principales analyses portent sur :
 
 ---
 
+## Analyse et exploitation des données avec SQL
+
+En complément des analyses réalisées sous Excel, une partie SQL a été développée afin de reproduire et d'approfondir l'exploitation des données à l'aide de requêtes.
+
+### Création de la base
+
+La structure de la table `cliniques` a été définie en SQL avec des types de données adaptés aux différentes variables du jeu de données.
+
+Le script de création permet de définir les champs relatifs aux établissements, aux périodes, aux activités ainsi qu'aux principaux indicateurs étudiés.
+
+### Automatisation de l'insertion des données
+
+Afin d'éviter la création manuelle de 288 lignes d'insertion SQL, un script Python a été développé avec la bibliothèque **Pandas**.
+
+Ce script permet de :
+
+- lire automatiquement les données contenues dans le fichier `Data.ods` ;
+- adapter les noms de colonnes à la structure de la table SQL ;
+- parcourir les 288 observations du jeu de données ;
+- transformer automatiquement chaque observation au format SQL ;
+- générer le fichier `02_insertion_donnees.sql`.
+
+Cette automatisation permet de créer rapidement un script d'insertion reproductible à partir du fichier de données source.
+
+### Requêtes d'analyse
+
+Plusieurs requêtes SQL ont ensuite été écrites afin de retrouver et d'approfondir les principaux indicateurs utilisés dans l'analyse :
+
+- calcul du nombre total de patients ;
+- calcul du nombre total de séjours ;
+- comptage du nombre d'établissements distincts ;
+- calcul de la durée moyenne de séjour ;
+- analyse du nombre de patients par établissement ;
+- analyse du nombre de patients par département ;
+- analyse du nombre de patients par type d'activité ;
+- suivi de l'évolution mensuelle et annuelle de l'activité ;
+- comparaison des activités entre les établissements ;
+- analyse de la durée moyenne de séjour ;
+- identification des établissements présentant les volumes d'activité les plus élevés.
+
+Cette partie permet de mettre en œuvre les principales opérations SQL utilisées en analyse de données, notamment `SELECT`, `WHERE`, `GROUP BY`, `ORDER BY`, `SUM`, `AVG`, `COUNT` et `DISTINCT`.
+
 ## Tableau de bord
 
 Un tableau de bord interactif a été développé sous Excel afin de synthétiser les principaux résultats.
