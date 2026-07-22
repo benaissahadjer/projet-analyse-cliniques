@@ -172,9 +172,7 @@ projet-analyse-cliniques/
 
 ---
 
-
-
-##  Auteur et contact
+## Auteur et contact
 
 **Hadjer Benaissa**  
 📧 benaissahadjer12@gmail.com  
