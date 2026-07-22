@@ -117,11 +117,11 @@ Des filtres interactifs permettent également d'explorer les résultats selon di
 
 
 - **Excel**
- - Tableaux croisés dynamiques
- - Graphiques croisés dynamiques
- - KPI
- - Segments et filtres interactifs
- - Fonctions de traitement et de contrôle des données
+  - Tableaux croisés dynamiques
+  - Graphiques croisés dynamiques
+  - KPI
+  - Segments et filtres interactifs
+  - Fonctions de traitement et de contrôle des données
 
 - **Power Query**
   - découverte des fonctionnalités de préparation et de transformation des données.
