@@ -194,15 +194,21 @@ Des filtres interactifs permettent également d'explorer les résultats selon di
 projet-analyse-cliniques/
 │
 ├── data/
-│   └── base_cliniques.xlsx
+│   └── Data.ods
 │
 ├── excel/
-│   └── analyse_cliniques.xlsx
+│   └── base_cliniques.xlsx
 │
 ├── dashboard/
+│   └── dashbord.pdf
+│
+├── scripts/
+│   └── generate_insert_sql.py
 │
 ├── sql/
-│   └── requetes_analyse.sql
+│   ├── 01_creation_table.sql
+│   ├── 02_insertion_donnees.sql
+│   └── 03_requetes_analyse.sql
 │
 ├── report/
 │   └── rapport_analyse_cliniques.pdf
